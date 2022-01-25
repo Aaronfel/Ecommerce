@@ -1,0 +1,49 @@
+.contenedorFormPrdocutos{
+    background-color: #bbb;
+    width: 45%;
+    height: 45%;
+    padding: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.tituloFormProductos{
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+.itemForm{
+    width: 45%;
+    padding: 2%;
+}
+
+.itemFormDescripcion{
+    width: 85%;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+}
+
+.itemInputForm{
+    max-width: 65%;
+    margin: 0 2%;
+}
+
+.textareaForm{
+    width: 80%;
+    margin: 0 2%;
+}
+
+
+.botonFormProductos{
+    background-color: rgb(69, 201, 225);
+    border: none;
+    border-radius: 20px;
+    width: 35%;
+    margin-top: 5%;
+    height: 15%;
+}

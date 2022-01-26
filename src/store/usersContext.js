@@ -9,7 +9,7 @@ const UsersProvider = ({children}) => {
         <UsersContext.Provider value={{}}>
             {children}
         </UsersContext.Provider>
-     );
+    );
 }
  
 export default UsersProvider;

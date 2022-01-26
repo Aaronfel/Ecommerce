@@ -5,7 +5,8 @@ import { objetoSecciones } from "../assets/data/objetoSecciones.js"
 
 export const ProductsContext = createContext(null);
 
-<<<<<<< HEAD
+
+
 const ProductsProvider = ({children}) => {
     const [productos, setProductos] = useState([]);
     const [secciones, setSecciones] = useState([]);
@@ -18,18 +19,13 @@ const ProductsProvider = ({children}) => {
         setSecciones(objetoSecciones);
     }, [objetoSecciones])
 
+     
     return (
-        <ProductsContext.Provider value={{productos, secciones}}>
-=======
-const ProductsContext = ({children}) => {
-
-    
-    return (
-        <Context.Provider>
->>>>>>> 1e7d3d74d8af7b429945f140d9ae8c2b9aa5b46c
+        <ProductsContext.Provider value={{setProductos, productos, secciones}}>
             {children}
         </ProductsContext.Provider>
      );
+
 }
- 
+
 export default ProductsProvider;

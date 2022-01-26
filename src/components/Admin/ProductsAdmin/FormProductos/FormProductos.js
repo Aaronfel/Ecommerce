@@ -1,13 +1,13 @@
 import './FormProductos.css'
 import { useContext, useEffect, useState } from 'react';
-import { Context } from '../../../../store/productsContext';
+import { ProductsContext } from '../../../../store/productsContext';
 import { toast } from 'react-toastify'
 import { v4 as uuidv4 } from 'uuid';
 import Alert from '@mui/material/Alert';
 
 const FormProductos = ({initialValues, values, setValues, editando, setEditando}) => {
     
-    const {setProductos, productos} = useContext(Context) 
+    const {setProductos, productos} = useContext(ProductsContext) 
 
 
     useEffect(() => {

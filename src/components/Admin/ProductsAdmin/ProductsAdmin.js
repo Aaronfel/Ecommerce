@@ -3,7 +3,7 @@ import TextField from '@mui/material/TextField';
 import { useContext, useEffect, useState } from 'react';
 import FormProductos from './FormProductos/FormProductos';
 import { v4 as uuidv4 } from 'uuid';
-import { Context } from '../../../store/productsContext';
+import { ProductsContext } from '../../../store/productsContext';
 import ItemProducto from './ItemProducto/ItemProducto';
 
 const ProductsAdmin = () => {
@@ -20,7 +20,7 @@ const ProductsAdmin = () => {
     }
     const [values, setValues] = useState(initialValues)
     const [editando, setEditando] = useState(false)
-    const { productos } = useContext(Context)
+    const { productos } = useContext(ProductsContext)
 
    /*  useEffect(() => {
         console.log(productos)

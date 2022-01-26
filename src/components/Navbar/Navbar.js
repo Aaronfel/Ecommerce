@@ -2,14 +2,9 @@ import { Link } from 'react-router-dom';
 import './Navbar.css'
 import logoSuper from '../../assets/img/logoSuperSinFondo.png'
 const Navbar = () => {
-    return (
-<<<<<<< HEAD:src/components/Navbar/Navbar.js
-        <>
-            <nav className="navbar navbar-expand-lg navbar-light">
-=======
+    return (        
         <div className='containerNav'>
             <nav className="navbar navbar-expand-lg navbar-dark">
->>>>>>> 1e7d3d74d8af7b429945f140d9ae8c2b9aa5b46c:src/Components/Navbar/Navbar.js
                 <div className="container-fluid">
                     <Link className="navbar-brand" to='/'><img src={logoSuper} alt='' style={{height: "60px"}}/></Link> 
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

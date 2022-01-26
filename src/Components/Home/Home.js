@@ -11,6 +11,7 @@ const Home = () => {
         { id: 1, nombre: 'Alimentos', urlImage: Alimentos },
         { id: 2, nombre: 'Limpieza', urlImage: Limpieza },
         { id: 3, nombre: 'Hogar', urlImage: Hogar }
+        
     ]
 
     return (

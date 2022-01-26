@@ -13,10 +13,10 @@ const ItemProducto = ({nombre, id, marca, seccion, subseccion, precio, stock, de
             <td>{stock}</td>
             <td>{seccion}</td>
             <td>{subseccion}</td>
-            <div className="contenedorBotonesItemProducto">
+            <td className="contenedorBotonesItemProducto">
                 <button className="btn btn-outline-info mx-1" onClick={() => editar(id)}>Ver/Editar</button>
                 <button className="btn btn-outline-danger mx-1"  onClick={() => eliminar(id)}>Eliminar</button>
-            </div>
+            </td>
         </tr>
     );
 }

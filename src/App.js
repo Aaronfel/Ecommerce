@@ -15,7 +15,7 @@ function App() {
         <Route path='/productos' element={<Products />}/>
         <Route path='/admin' element={<ProductsAdmin />}/>
       </Routes>
-      <ToastContainer/> 
+      <ToastContainer/>
     </Router>
   );
 }

@@ -5,9 +5,14 @@ import { toast } from 'react-toastify'
 import { v4 as uuidv4 } from 'uuid';
 import Alert from '@mui/material/Alert';
 
-const FormProductos = ({initialValues, values, setValues}) => {
-
+const FormProductos = ({initialValues, values, setValues, editando, setEditando}) => {
+    
     const {setProductos, productos} = useContext(Context) 
+
+
+    useEffect(() => {
+
+    },[])
 
     /* const initialValues = {
         id: uuidv4(),
@@ -28,8 +33,16 @@ const FormProductos = ({initialValues, values, setValues}) => {
         setValues({...values, [name]: value})
     }
 
-    const confirmarEdicion = () => {
-      
+    const confirmarEdicion = (e) => {
+        e.preventDefault()
+        let array = []
+        if(productos.length > 0){
+            array = productos.filter(producto => producto.id !== values.id)
+        }
+        array.push(values)
+        setProductos(array)
+        setValues(initialValues)
+        setEditando(false)
     }
 
     const guardarProducto = (e) => {
@@ -38,11 +51,17 @@ const FormProductos = ({initialValues, values, setValues}) => {
             setProductos([...productos, values])
             setValues(initialValues)
             setMostrarWarning(false)
+            console.log(values)
+           /*  objetoProductos.appendFile(values) */
         }else{
             console.log("completa")
             setMostrarWarning(true)
         }
     }
+
+    useEffect(() =>{ 
+        localStorage.setItem("productos", JSON.stringify(productos))
+    },[productos])
 
     const estaCompleto = () => {
         for (const key in values) {
@@ -53,12 +72,14 @@ const FormProductos = ({initialValues, values, setValues}) => {
         return true
     }
 
-    useEffect(() => {
+    /* useEffect(() => {
         console.log(values)
-    },[values])
+    },[values]) */
+
+
 
     return (  
-        <form onSubmit={(e) => guardarProducto(e)} className="contenedorFormPrdocutos" action="">
+        <form onSubmit={(e) => !editando ? guardarProducto(e) : confirmarEdicion(e)} className="contenedorFormPrdocutos" action="">
                 <h2 className="tituloFormProductos">Datos del producto</h2>
                 <div className="itemForm">
                     <label className="itemLabelForm" htmlFor="nombre">Nombre</label>

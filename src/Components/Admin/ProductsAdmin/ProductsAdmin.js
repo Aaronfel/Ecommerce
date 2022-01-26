@@ -19,16 +19,17 @@ const ProductsAdmin = () => {
         subseccion: ""
     }
     const [values, setValues] = useState(initialValues)
+    const [editando, setEditando] = useState(false)
     const { productos } = useContext(Context)
 
-    useEffect(() => {
+   /*  useEffect(() => {
         console.log(productos)
-    }, [productos])
+    }, [productos]) */
 
     const editar = (id) => {
         console.log("editando")
         setValues(productos.find(producto => producto.id === id))
-        console.log(initialValues)
+        setEditando(true)
     }
 
     const eliminar = (id) => {
@@ -37,7 +38,7 @@ const ProductsAdmin = () => {
 
     return (
         <div className="contenedorABMProductos" >
-            <FormProductos initialValues={initialValues} values={values} setValues={setValues}/>
+            <FormProductos initialValues={initialValues} values={values} setValues={setValues} setEditando={setEditando} editando={editando}/>
             {
                 productos.length > 0 ?
                     <div className="contenedorItemsProductos">

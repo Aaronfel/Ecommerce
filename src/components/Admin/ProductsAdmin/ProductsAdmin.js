@@ -12,15 +12,21 @@ const ProductsAdmin = () => {
         id: uuidv4(),
         nombre: "",
         marca: "",
-        descripcion: "",
-        precio: 1,
-        stock: 1,
-        seccion: "",
-        subseccion: ""
+        descripcionChicha: "",
+        descripcionGrande: "",
+        urlImagen: "",
+        precio: 0,
+        stock: 0,
+        seccionPrincipal: "",
+        subSeccion: "",
+        oferta: false,
+        destacado: false,
     }
+    
     const [values, setValues] = useState(initialValues)
     const [editando, setEditando] = useState(false)
-    const { productos } = useContext(ProductsContext)
+    const [verForm, setVerForm] = useState(false)
+    const { productos, setProductos } = useContext(ProductsContext)
 
    /*  useEffect(() => {
         console.log(productos)
@@ -33,12 +39,20 @@ const ProductsAdmin = () => {
     }
 
     const eliminar = (id) => {
-        console.log("elimnando")
+        if(window.confirm("Estas seguro de eliminar este producto?")){
+            setProductos(productos.filter(producto => producto.id !== id))
+        }
+
     }
 
     return (
         <div className="contenedorABMProductos" >
-            <FormProductos initialValues={initialValues} values={values} setValues={setValues} setEditando={setEditando} editando={editando}/>
+            
+            {
+                verForm ?     
+                <FormProductos setVerForm={setVerForm} initialValues={initialValues} values={values} setValues={setValues} setEditando={setEditando} editando={editando}/>
+                : <button className="btn btn-success" onClick={() => setVerForm(true)}>Agregar Producto</button>    
+            }
             {
                 productos.length > 0 ?
                     <div className="contenedorItemsProductos">
@@ -46,13 +60,13 @@ const ProductsAdmin = () => {
                             <table className="table">
                                 <tbody>
                                     <tr className="bg-dark text-white">
+                                        <th></th>
                                         <th>Nombre</th>
-                                        <th>Marca</th>
                                         <th>Descripcion</th>
                                         <th>Precio</th>
                                         <th>Stock</th>
-                                        <th>Sección</th>
-                                        <th>Seubsección</th>
+                                        <th>Sección principal</th>
+                                        <th>Subsección</th>
                                         <th></th>
                                         <th></th>
                                     </tr>

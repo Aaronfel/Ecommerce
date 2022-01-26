@@ -5,7 +5,8 @@ export const Context = createContext(null);
 
 const ProductsContext = ({children}) => {
 
-    return ( 
+    
+    return (
         <Context.Provider>
             {children}
         </Context.Provider>

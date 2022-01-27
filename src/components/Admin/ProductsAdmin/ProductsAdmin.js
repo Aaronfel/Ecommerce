@@ -1,5 +1,4 @@
 import './ProductsAdmin.css'
-import TextField from '@mui/material/TextField';
 import { useContext, useEffect, useState } from 'react';
 import FormProductos from './FormProductos/FormProductos';
 import { v4 as uuidv4 } from 'uuid';
@@ -26,24 +25,28 @@ const ProductsAdmin = () => {
     const [values, setValues] = useState(initialValues)
     const [editando, setEditando] = useState(false)
     const [verForm, setVerForm] = useState(false)
+    
     const { productos, setProductos } = useContext(ProductsContext)
 
-   /*  useEffect(() => {
+    useEffect(() => {
         console.log(productos)
-    }, [productos]) */
+    }, [productos])
 
     const editar = (id) => {
-        console.log("editando")
         setValues(productos.find(producto => producto.id === id))
         setEditando(true)
+        setVerForm(true)
     }
 
     const eliminar = (id) => {
         if(window.confirm("Estas seguro de eliminar este producto?")){
             setProductos(productos.filter(producto => producto.id !== id))
         }
-
     }
+
+    useEffect(() => {
+        localStorage.setItem("productos", JSON.stringify(productos))
+    },[productos])
 
     return (
         <div className="contenedorABMProductos" >
@@ -51,18 +54,18 @@ const ProductsAdmin = () => {
             {
                 verForm ?     
                 <FormProductos setVerForm={setVerForm} initialValues={initialValues} values={values} setValues={setValues} setEditando={setEditando} editando={editando}/>
-                : <button className="btn btn-success" onClick={() => setVerForm(true)}>Agregar Producto</button>    
+                : <button className="add-product-button" onClick={() => setVerForm(true)}>Agregar Producto</button>    
             }
             {
                 productos.length > 0 ?
                     <div className="contenedorItemsProductos">
                         {
                             <table className="table">
-                                <tbody>
-                                    <tr className="bg-dark text-white">
+                                <tbody className='table-header'>
+                                    <tr className="text-white">
                                         <th></th>
                                         <th>Nombre</th>
-                                        <th>Descripcion</th>
+                                        <th></th>
                                         <th>Precio</th>
                                         <th>Stock</th>
                                         <th>Sección principal</th>

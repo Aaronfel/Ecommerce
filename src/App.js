@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar';
 import Products from './Components/Products/Products';
 import ProductsAdmin from './Components/Admin/ProductsAdmin/ProductsAdmin';
 import {ToastContainer} from 'react-toastify';
+import UsersAdmin from './Components/Admin/UsersAdmin/UsersAdmin';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
         <Route path='/productos' element={<Products />}/>
         <Route path='/productos/:seccionParam' element={<Products />}/>
         <Route path='/productos/:sectionParam/:subSeccionParam' element={<Products />}/>
-        <Route path='/admin' element={<ProductsAdmin />}/>
+        <Route path='/productosAdmin' element={<ProductsAdmin />}/>
+        <Route path='/usuariosAdmin' element={<UsersAdmin />}/>
       </Routes>
       <ToastContainer/>
     </Router>

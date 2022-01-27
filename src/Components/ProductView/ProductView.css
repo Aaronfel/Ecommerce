@@ -1,0 +1,124 @@
+.product-view-background {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: #F1FAEE;
+}
+.product-image-and-text {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+.product-view-image {
+    margin: 30px;
+    padding: 10px;
+    background-color: white;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #1D3557;
+    border-width: 2px;
+    width: 27vw;
+    height: 33vw;
+    object-fit: contain;
+}
+.product-details {
+    margin: 5px;
+    margin-top: 25px;
+}
+.product-title, .product-text , .product-brand{
+    text-align: start;
+    margin: 5px;
+    padding: 5px;
+}
+.product-text-center {
+    text-align: start;
+    margin: 5px;
+    padding: 5px;
+}
+.product-text-margin {
+    margin-top: 30px;
+}
+.add-cart-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #1D3557;
+    border-width: 2px;
+    margin: 30px;
+    padding: 10px;
+    width: 20vw;
+    height: 33vw;
+}
+.add-cart-card-title {
+    text-align: center;
+    margin: 5px;
+    margin-top: 30px;
+    padding: 5px;
+}
+.cantidad {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100px;
+}
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+.product-button {
+    margin: 5px;
+    margin-bottom: 15px;
+    padding: 5px;
+    background-color: #A8DADC;
+    text-align: center;
+    border-color: #A8DADC;
+    border-radius: 5px;
+}
+
+@media(max-width: 1270px) {
+    .product-view-background {
+        flex-wrap: wrap;
+    }
+    .add-cart-card {
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+    }
+    .add-cart-card-title {
+        margin: 5px;
+    }
+}
+@media(max-width: 720px) {
+    .product-view-image {
+        width: 40vw;
+        height: 45vw;
+    }
+}
+@media(max-width: 540px) {
+    .product-view-image {
+        width: 100%;
+        height: auto;
+    }
+    .product-image-and-text {
+        flex-wrap: wrap;
+    }
+    .product-details {
+        margin-top: 15px;
+    }
+    .product-title {
+        text-align: center;
+    }
+    .add-cart-card {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .add-cart-card-title {
+        margin-top: 15px;
+    }
+}

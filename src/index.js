@@ -7,6 +7,9 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle'
 import ProductsProvider from '../src/store/productsContext'
 import UsersProvider from '../src/store/usersContext'
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 ReactDOM.render(
   <UsersProvider>

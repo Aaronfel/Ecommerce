@@ -3,8 +3,8 @@ import './Navbar.css'
 import logoSuper from '../../assets/img/logoSuperSinFondo.png'
 const Navbar = () => {
     return (        
-        <div className='containerNav'>
-            <nav className="navbar navbar-expand-lg navbar-dark">
+        <div className='containerNav '>
+            <nav className="navbar navbar-expand-lg navbar-dark d-flex">
                 <div className="container-fluid">
                     <Link className="navbar-brand" to='/'><img src={logoSuper} alt='' style={{height: "60px"}}/></Link> 
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,6 +25,9 @@ const Navbar = () => {
                                 <Link className="nav-link" to='/usuariosAdmin'>Usuarios Admin</Link>
                             </li>
                         </ul>
+                    </div>
+                    <div className='justify-content-end'>
+                            <button className='buttonNavBar'><i class=" me-2 bi bi-cart4"></i>Ir al Carrito</button>
                     </div>
                 </div>
             </nav>

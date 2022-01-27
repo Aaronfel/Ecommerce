@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Ecommerce/static/css/main.7169e3ce.css",
-    "main.js": "/Ecommerce/static/js/main.12cd6d1b.js",
+    "main.js": "/Ecommerce/static/js/main.e8d30afc.js",
     "static/js/787.dcc73137.chunk.js": "/Ecommerce/static/js/787.dcc73137.chunk.js",
     "static/media/imagenSuper_2.jpg": "/Ecommerce/static/media/imagenSuper_2.5022005c3a41e8da4cee.jpg",
     "static/media/detergente-4.jpeg": "/Ecommerce/static/media/detergente-4.8ed2486f55491b802a97.jpeg",
@@ -25,11 +25,11 @@
     "static/media/slick.woff": "/Ecommerce/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Ecommerce/index.html",
     "main.7169e3ce.css.map": "/Ecommerce/static/css/main.7169e3ce.css.map",
-    "main.12cd6d1b.js.map": "/Ecommerce/static/js/main.12cd6d1b.js.map",
+    "main.e8d30afc.js.map": "/Ecommerce/static/js/main.e8d30afc.js.map",
     "787.dcc73137.chunk.js.map": "/Ecommerce/static/js/787.dcc73137.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7169e3ce.css",
-    "static/js/main.12cd6d1b.js"
+    "static/js/main.e8d30afc.js"
   ]
 }

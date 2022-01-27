@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./ProductCard.css"
 
 function ProductCard({productos}) {
@@ -7,7 +8,7 @@ function ProductCard({productos}) {
                 {
                 productos.length > 0 ?
                 productos.map(producto =>
-                    <div className="producto-card" key={producto.id}>
+                    <Link to={`/productos/producto/${producto.id}`} className="producto-card" key={producto.id}>
                         <img src={producto.urlImagen} className="producto-imagen" alt=""/>
                         <div className="producto-text">
                             <h5 className="producto-title">{producto.nombre}</h5>
@@ -19,7 +20,7 @@ function ProductCard({productos}) {
                                 : <div></div>
                             }
                         </div>
-                    </div>
+                    </Link>
                 )
                 : <div></div>
                 }

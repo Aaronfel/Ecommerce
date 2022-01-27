@@ -17,10 +17,6 @@ const UsersAdmin = () => {
         setUsuarios(array)
     }
 
-    /*   useEffect(() => {
-          const aux = [...usuarios]
-          setUsuariosOrdenados(aux.sort((a,b) => a.username - b.username ))
-      },[usuarios]) */
 
     return (
         <div className="d-flex flex-column justify-content-center">

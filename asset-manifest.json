@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/Ecommerce/static/css/main.7169e3ce.css",
+    "main.js": "/Ecommerce/static/js/main.12cd6d1b.js",
+    "static/js/787.dcc73137.chunk.js": "/Ecommerce/static/js/787.dcc73137.chunk.js",
+    "static/media/imagenSuper_2.jpg": "/Ecommerce/static/media/imagenSuper_2.5022005c3a41e8da4cee.jpg",
+    "static/media/detergente-4.jpeg": "/Ecommerce/static/media/detergente-4.8ed2486f55491b802a97.jpeg",
+    "static/media/imagenSuper_3.jpg": "/Ecommerce/static/media/imagenSuper_3.c29f4c0aabdd4876faed.jpg",
+    "static/media/logoSuperSinFondo.png": "/Ecommerce/static/media/logoSuperSinFondo.e118c6c2ef21ba7c36a6.png",
+    "static/media/papel-higienico-1.jpg": "/Ecommerce/static/media/papel-higienico-1.751636f0b9e3f0b0f5cd.jpg",
+    "static/media/bootstrap-icons.woff?": "/Ecommerce/static/media/bootstrap-icons.38c4d2499557ae0379fd.woff",
+    "static/media/bootstrap-icons.woff2?": "/Ecommerce/static/media/bootstrap-icons.2b56e79ae5013246de29.woff2",
+    "static/media/imagenSuper_1.jpg": "/Ecommerce/static/media/imagenSuper_1.5ec25ef395322fcae4d9.jpg",
+    "static/media/detergente-2.png": "/Ecommerce/static/media/detergente-2.334cffad63b389f7c37a.png",
+    "static/media/mesa-2.jpg": "/Ecommerce/static/media/mesa-2.e97b5be51c024d67c193.jpg",
+    "static/media/papel-higienico-2.jpg": "/Ecommerce/static/media/papel-higienico-2.a093ddc4d1058fcc396b.jpg",
+    "static/media/detergente-1.jpg": "/Ecommerce/static/media/detergente-1.fb3b4befd72f28b2bed9.jpg",
+    "static/media/Alimentos.jpg": "/Ecommerce/static/media/Alimentos.9a18599dcae3fa81fb2a.jpg",
+    "static/media/mesa-1.jpg": "/Ecommerce/static/media/mesa-1.f09c8f2a6aa202f8bb2a.jpg",
+    "static/media/Limpieza.jpg": "/Ecommerce/static/media/Limpieza.100c8c0cb05d1da2543f.jpg",
+    "static/media/Hogar.jpg": "/Ecommerce/static/media/Hogar.158495c8a406303e8854.jpg",
+    "static/media/slick.svg": "/Ecommerce/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Ecommerce/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Ecommerce/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Ecommerce/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/Ecommerce/index.html",
+    "main.7169e3ce.css.map": "/Ecommerce/static/css/main.7169e3ce.css.map",
+    "main.12cd6d1b.js.map": "/Ecommerce/static/js/main.12cd6d1b.js.map",
+    "787.dcc73137.chunk.js.map": "/Ecommerce/static/js/787.dcc73137.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7169e3ce.css",
+    "static/js/main.12cd6d1b.js"
+  ]
+}
